@@ -27,6 +27,7 @@ var testDate = new Date(1357016400000).toLocaleDateString('EN-US','%d-%b-%Y');
 
 // Attempting find gods created within the last year
 print('Gods released after: ' + testDate);
+// The built-in filter only selects, it doesn't project
 var selections = friendlyGods.filter(
   function(element) {
     if (new Date(element.release) > new Date(testDate)) 
