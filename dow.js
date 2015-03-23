@@ -1,3 +1,4 @@
+// Main array (names) has global scope, that's bad
 var ENGLISH = 0,
     SPANISH = 1;
 var names = [];
@@ -10,4 +11,4 @@ function dayName(language, number) {
   return names[language][number];
 }
 
-print(dayName(SPANISH, 1));
+print(dayName(SPANISH, 4));
