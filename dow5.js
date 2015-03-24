@@ -1,4 +1,4 @@
-// Same exact code as the last example in the reading
+// Same exact code as the last example (file dow4.js) in the reading
 // What names we give the global function and the object parameter don't matter
 (function(bar) {
   var names = ["Sunday", "Monday", "Tuesday", "Wednesday",
