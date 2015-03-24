@@ -8,7 +8,7 @@ var friendlyGods = GODS.map(function(god) {
   // newObj = god;
 
   // And this will too, if the object has function properties!!
-  //  for different reasons . . .
+  //  for different reasons . . . in other words it is a hack
   newObj = JSON.parse(JSON.stringify(god));
   newObj.release =  new Date(newObj.release).toLocaleDateString('EN-US','%d-%b-%Y');
   return newObj;
