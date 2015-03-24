@@ -21,6 +21,7 @@ var ENGLISH = 0,
 
 write('Enter number 1 for English, 2 for Spanish: ');
 var lang = readline();
+// Adjust for zero-base
 lang = (lang == 1)?0:1;
 write('Enter 1 for number-to-name, 2 for name-to-number: ');
 var isNumber = readline();
