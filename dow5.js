@@ -6,10 +6,10 @@
 
   bar.name = function(number) {
     return names[number];
-  };
+    };
   bar.number = function(name) {
     return names.indexOf(name);
-  };
+    };
 })(this.foo = {});
 
 print(foo.name(foo.number("Saturday")));
