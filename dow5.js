@@ -1,14 +1,14 @@
 // Same exact code as the last example (file dow4.js) in the reading
 // What names we give the global function and the object parameter don't matter
 (function(bar) {
-  var names = ["Sunday", "Monday", "Tuesday", "Wednesday",
+  var daymonikers = ["Sunday", "Monday", "Tuesday", "Wednesday",
                "Thursday", "Friday", "Saturday"];
 
-  bar.name = function(number) {
-    return names[number];
+  bar.blah = function(number) {
+    return daymonikers[number];
     };
-  bar.number = function(name) {
-    return names.indexOf(name);
+  bar.bleh = function(name) {
+    return daymonikers.indexOf(name);
     };
 })(this.foo = {});
 
